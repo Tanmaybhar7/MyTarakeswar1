@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hotels - Tarakeswar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/protect.js"></script>
+
+  <header class="site-header">
+    <div class="nav-container container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="logo"/>
+        <div class="title">MyTarakeswar</div>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="route.html">Route</a>
+        <a href="history.html">History</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="about.html">About</a>
+       
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding:28px 0;">
+      <h2>Hotels & Stays</h2>
+      <p class="intro">Choose a place to stay — see room types, prices, photos and call directly to book.</p>
+
+      <div id="hotelsList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/hotels.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

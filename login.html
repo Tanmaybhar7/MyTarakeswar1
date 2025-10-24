@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <div class="auth-container">
+    <div class="auth-card animate-pop">
+      <img src="images/TAR3.jpeg" alt="Logo" class="logo">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to continue your <span>Journey</span></p>
+
+      <!-- Add form with correct IDs -->
+      <form id="loginForm">
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" id="loginEmail" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-lock"></i>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <div class="auth-links">
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

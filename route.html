@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyTarakeswar - Route & Trains</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Shared Navbar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="logo" />
+        MyTarakeswar
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Route Content -->
+  <main class="container">
+    <section class="intro center">
+      <h2>Find Your Route</h2>
+      <p>Get the best route to Tarakeswar using GPS.</p>
+    </section>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="locateBtn">Use My Location</button>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+
+  <footer class="site-footer">
+    <p>© 2025 MyTarakeswar. All rights reserved.</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+  <!-- Route JS -->
+  <script src="js/route.js"></script>
+</body>
+</html>

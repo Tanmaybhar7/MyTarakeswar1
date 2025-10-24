@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Restaurants - Tarakeswar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="logo"/>
+        <div class="title">MyTarakeswar</div>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+      <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="route.html">Route</a>
+        <a href="history.html">History</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding:28px 0;">
+      <h2>Restaurants & Dining</h2>
+      <p class="intro">Explore Veg and Non-Veg restaurants in Tarakeswar.</p>
+
+      <label for="filterType">Filter by:</label>
+      <select id="filterType">
+  <option value="All">All</option>
+  <option value="Veg">Veg</option>
+  <option value="Non-Veg">Non-Veg</option>
+  <option value="Both">Both</option>
+</select>
+
+<div id="restaurantsList" class="list"></div>
+
+<script src="js/restaurants.js"></script>
+</body>
+</html>

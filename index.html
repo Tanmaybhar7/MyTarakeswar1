@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyTarakeswar - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="logo" />
+        MyTarakeswar
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="route.html">Route</a>
+        <a href="history.html">History</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="about.html">About</a>
+        <div class="nav-actions">
+          <span id="userNameDisplay" style="color: #fff; margin-right:8px;"></span>
+          <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="slider">
+        <div class="slide" style="background-image:url('images/TAE6.jpg')"></div>
+        <div class="slide" style="background-image:url('images/TAR2.jpg')"></div>
+        <div class="slide" style="background-image:url('images/TAR1.jpg')"></div>
+      </div>
+
+      <div class="hero-card">
+        <h1>Tarakeswar — Heart of Devotion</h1>
+        <p>Discover temple routes, history, local food and the best places to stay.</p>
+        <div class="cta-row">
+          <button class="cta cta-primary" onclick="location.href='route.html'">Find Route</button>
+          <button class="cta cta-outline" onclick="location.href='history.html'">Read History</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <h2>Explore</h2>
+      <p>Use the menu to navigate routes, restaurants, hotels, and the history of Tarakeswar.</p>
+
+      <div class="grid">
+        <div class="card center" onclick="location.href='route.html'">
+          <h3>Route</h3><p>Find the best route using your current location or manual input.</p>
+        </div>
+        <div class="card center" onclick="location.href='history.html'">
+          <h3>History</h3><p>Read easy English chapters on temple history and nearby spots.</p>
+        </div>
+        <div class="card center" onclick="location.href='restaurants.html'">
+          <h3>Restaurants</h3><p>Veg & Non-Veg listings with prices and photos.</p>
+        </div>
+        <div class="card center" onclick="location.href='hotels.html'">
+          <h3>Hotels</h3><p>Room prices, phone numbers and images for quick booking.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/protect.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

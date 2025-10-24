@@ -1,0 +1,64 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up - MyTarakeswar</title>
+  <link rel="stylesheet" href="css/auth.css" />
+  
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0ad6c6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card animate-pop">
+      
+      <!-- Header -->
+      <h2 class="auth-title">
+        <i class="fas fa-user-plus"></i> Sign Up
+      </h2>
+      <p class="subtitle">Create your <span>MyTarakeswar</span> account</p>
+
+      <!-- Signup Form -->
+      <form id="signupForm" novalidate>
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input id="signupName" type="text" placeholder="Full Name" required />
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input id="signupEmail" type="email" placeholder="Email" required />
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input id="signupPassword" type="password" placeholder="Password" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-key"></i>
+          <input id="signupConfirmPassword" type="password" placeholder="Confirm Password" required />
+        </div>
+        
+        <button type="submit" class="btn">
+          <i class="fas fa-user-check"></i> Create Account
+        </button>
+      </form>
+
+      <!-- Footer Links -->
+      <div class="auth-links">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
