@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Tarakeswar Inn",
+    "image": "images/hotels/tarakeswar-inn.jpg",
+    "phone": "+91-9988776655",
+    "address": "Station Road, Tarakeswar",
+    "rooms": [
+      { "type": "Standard", "price": "₹700/night" },
+      { "type": "Deluxe", "price": "₹1200/night" }
+    ],
+    "googleMapsQuery": "Tarakeswar Inn Tarakeswar"
+  },
+  {
+    "id": 2,
+    "name": "Temple View Lodge",
+    "image": "images/hotels/temple-view.jpg",
+    "phone": "+91-8877665544",
+    "address": "Near Tarakeswar Temple",
+    "rooms": [
+      { "type": "Single", "price": "₹600/night" },
+      { "type": "Double", "price": "₹1000/night" }
+    ],
+    "googleMapsQuery": "Temple View Lodge Tarakeswar"
+  },
+  {
+    "id": 3,
+    "name": "Traveler's Rest",
+    "image": "images/hotels/travelers-rest.jpg",
+    "phone": "+91-9112233445",
+    "address": "Near Bus Stand, Tarakeswar",
+    "rooms": [
+      { "type": "AC Room", "price": "₹900/night" },
+      { "type": "Non-AC", "price": "₹500/night" }
+    ],
+    "googleMapsQuery": "Travelers Rest Tarakeswar"
+  }
+]

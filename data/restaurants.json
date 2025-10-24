@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Taste of Bengal",
+    "type": "Veg",
+    "price_range": "₹80 - ₹250",
+    "image": "images/restaurants/taste-of-bengal.jpg",
+    "phone": "+91-9876543210",
+    "address": "Main Road, Tarakeswar",
+    "googleMapsQuery": "Taste of Bengal Tarakeswar"
+  },
+  {
+    "id": 2,
+    "name": "Shiva Bhojanalaya",
+    "type": "Veg",
+    "price_range": "₹60 - ₹180",
+    "image": "images/restaurants/shiva-bhojanalaya.jpg",
+    "phone": "+91-9123456789",
+    "address": "Temple Street, Tarakeswar",
+    "googleMapsQuery": "Shiva Bhojanalaya Tarakeswar"
+  },
+  {
+    "id": 3,
+    "name": "Riverfront NonVeg Corner",
+    "type": "Non-Veg",
+    "price_range": "₹150 - ₹400",
+    "image": "images/restaurants/riverfront.jpg",
+    "phone": "+91-9988776655",
+    "address": "Riverside Lane, Tarakeswar",
+    "googleMapsQuery": "Riverfront Tarakeswar"
+  },
+  {
+    "id": 4,
+    "name": "Tara Dine & Delight",
+    "type": "Veg",
+    "price_range": "₹100 - ₹300",
+    "image": "images/restaurants/tara-dine.jpg",
+    "phone": "+91-9012345678",
+    "address": "Market Complex, Tarakeswar",
+    "googleMapsQuery": "Tara Dine Tarakeswar"
+  }
+]
