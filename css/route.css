@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #800000;
+  padding: 15px 30px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+header .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main content */
+.container { padding: 20px; }
+.intro.center { text-align: center; margin-bottom: 20px; }
+
+.controls {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Map */
+#map {
+  height: 70vh;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #800000;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background: #047dc4;
+    padding: 10px 0;
+  }
+  .nav-links.active-menu {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links a {
+    padding: 8px 15px;
+    text-align: center;
+  }
+
+  /* Center the button on mobile */
+  .controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .controls button {
+    width: 80%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+.train-status {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.train-status h3 {
+  margin-bottom: 15px;
+  color: #800000;
+  text-align: center;
+}
+
+.train-status .controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.train-status input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.train-status button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #800000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.train-status button:hover {
+  background: #a00000;
+}
+
+.train-status table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.train-status table th,
+.train-status table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.train-status table th {
+  background: #800000;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .train-status .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .train-status input {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .train-status button {
+    width: 80%;
+    max-width: 250px;
+    margin-top: 5px;
+  }
+}
