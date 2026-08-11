@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTarakeswar | About & Contact</title>
+  <meta name="description" content="Learn about MyTarakeswar, our objective in guiding Tarakeswar pilgrims and tourists, and contact developer Tanmay Bhar." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MyTarakeswar | About & Contact" />
+  <meta property="og:description" content="Your complete tourism and information portal for Tarakeswar, West Bengal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/TAR1.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <script src="js/protect.js"></script>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo"/>
+        <div class="title">MyTarakeswar</div>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="route.html">Route</a>
+        <a href="history.html">History</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="about.html" class="active">About</a>
+        <div class="nav-actions">
+          <span id="userNameDisplay" style="color: #fff; margin-right:8px; font-weight:600;"></span>
+          <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About MyTarakeswar</h1>
+    <p>MyTarakeswar is an independent digital tourism and information portal dedicated to Tarakeswar, Hooghly. Our mission is to provide accurate, easy-to-use navigation routes, temple history, dining options, and accommodation details to pilgrims and tourists visiting Baba Taraknath Temple.</p>
+  </section>
+
+  <!-- Purpose & Objective -->
+  <section class="privacy-section">
+    <h3>Our Purpose & Services</h3>
+    <ul style="list-style: none; margin-top: 15px;">
+      <li style="margin: 12px 0;"><i class="fas fa-route"></i> <strong>Live Route Guidance:</strong> Instant GPS location and manual address routing directly to Taraknath Temple.</li>
+      <li style="margin: 12px 0;"><i class="fas fa-book-open"></i> <strong>Complete History Chapter:</strong> Verified historical timelines, local lore, Dudhpukur, and temple traditions.</li>
+      <li style="margin: 12px 0;"><i class="fas fa-utensils"></i> <strong>Dining Directory:</strong> Curated Veg & Non-Veg restaurant listings with phone numbers and map directions.</li>
+      <li style="margin: 12px 0;"><i class="fas fa-hotel"></i> <strong>Hotels & Lodging:</strong> Verified hotel pricing, room types, and direct call booking.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Fill out the form below to send an email directly to <strong>bhartanmay@gmail.com</strong>.</p>
+
+    <!-- Status Message Box -->
+    <div id="contactFormStatus" class="contact-status-msg" style="display:none; margin-bottom:16px;"></div>
+
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="contactName">Your Name</label>
+        <input type="text" id="contactName" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contactEmail">Your Email</label>
+        <input type="email" id="contactEmail" placeholder="Enter your email address" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contactSubject">Subject</label>
+        <input type="text" id="contactSubject" placeholder="Inquiry / Feedback subject" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-contact-submit" style="width:100%;">
+        <i class="fas fa-paper-plane"></i> Send Email
+      </button>
+    </form>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Project Contributors</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="images/TANMAYpr.jpg" alt="Tanmay Bhar" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Tanmay Bhar</h3>
+        <p>Founder | Developer</p>
+        <div class="socials">
+          <a href="https://linkedin.com/in/tanmaybharcr7" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/tanmay.cr7" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/Tanmaybhar7" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="images/Anusa.jpg" alt="Anusa Ghosh" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Anusa Ghosh</h3>
+        <p>Project Member</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="images/RIMI.jpg" alt="Rimi Das" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Rimi Das</h3>
+        <p>Project Member</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/rimi-das-b29013307" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/_rimi_76" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/rimi653" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="images/TAR1.jpg" alt="Ankan Ray" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Ankan Ray</h3>
+        <p>Co-Founder</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="images/TAR2.jpg" alt="Koushiki Ukil" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Koushiki Ukil</h3>
+        <p>Helper</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="images/TAR4.jpg" alt="Subro Das" onerror="this.src='images/TAR3.jpeg'" />
+        <h3>Subro Das</h3>
+        <p>Helper</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+          <span>MyTarakeswar</span>
+        </div>
+        <p>Your comprehensive digital tourism and route guidance portal for Tarakeswar, West Bengal.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="route.html">Route</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Developer</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:bhartanmay@gmail.com" style="color:var(--accent); text-decoration:none;">bhartanmay@gmail.com</a></p>
+        <p><i class="fas fa-location-dot"></i> Tarakeswar, Hooghly, WB</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MyTarakeswar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+
+  <!-- EmailJS Integration Script with User's Keys -->
+  <script>
+    // User EmailJS Credentials
+    const EMAILJS_PUBLIC_KEY = "xQexcNVuOXE4CJORD"; 
+    const EMAILJS_SERVICE_ID = "service_lcsayoj"; 
+    const EMAILJS_TEMPLATE_ID = "template_8ycc4bd";
+
+    // Initialize EmailJS SDK
+    if (typeof emailjs !== 'undefined') {
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contactForm');
+      const formStatus = document.getElementById('contactFormStatus');
+
+      function showStatus(msg, type) {
+        if (!formStatus) return;
+        formStatus.style.display = 'block';
+        if (type === 'loading') {
+          formStatus.style.background = '#fff8e6';
+          formStatus.style.color = '#8a6d3b';
+          formStatus.style.border = '1px solid #faebcc';
+          formStatus.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${msg}`;
+        } else if (type === 'error') {
+          formStatus.style.background = '#f2dede';
+          formStatus.style.color = '#a94442';
+          formStatus.style.border = '1px solid #ebccd1';
+          formStatus.innerHTML = `<i class="fas fa-circle-exclamation"></i> ${msg}`;
+        } else if (type === 'success') {
+          formStatus.style.background = '#dff0d8';
+          formStatus.style.color = '#3c763d';
+          formStatus.style.border = '1px solid #d6e9c6';
+          formStatus.innerHTML = `<i class="fas fa-circle-check"></i> ${msg}`;
+        } else {
+          formStatus.innerHTML = msg;
+        }
+      }
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('contactName').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const subject = document.getElementById('contactSubject').value.trim();
+          const message = document.getElementById('contactMessage').value.trim();
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+          if (!name || !email || !subject || !message) {
+            showStatus('Please fill in all required fields.', 'error');
+            return;
+          }
+
+          submitBtn.disabled = true;
+          showStatus('Sending email to bhartanmay@gmail.com...', 'loading');
+
+          const templateParams = {
+            name: name,
+            from_name: name,
+            email: email,
+            from_email: email,
+            reply_to: email,
+            to_name: "Tanmay Bhar",
+            to_email: 'bhartanmay@gmail.com',
+            subject: subject,
+            message: message
+          };
+
+          try {
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+            showStatus('Thank you! Your email has been sent directly to bhartanmay@gmail.com.', 'success');
+            contactForm.reset();
+          } catch (err) {
+            console.error('EmailJS send error:', err);
+            // Fallback direct AJAX if template variable mismatch occurs
+            try {
+              const res = await fetch("https://formsubmit.co/ajax/bhartanmay@gmail.com", {
+                method: "POST",
+                headers: { 
+                  "Content-Type": "application/json",
+                  "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                  name: name,
+                  email: email,
+                  _subject: `MyTarakeswar: ${subject}`,
+                  message: message,
+                  _captcha: "false"
+                })
+              });
+              if (res.ok) {
+                showStatus('Thank you! Your message has been sent to bhartanmay@gmail.com.', 'success');
+                contactForm.reset();
+              } else {
+                throw new Error('Fallback failed');
+              }
+            } catch (fallbackErr) {
+              showStatus('Failed to send email. Please check your network connection.', 'error');
+            }
+          } finally {
+            submitBtn.disabled = false;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

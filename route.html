@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyTarakeswar | Routes & Navigation</title>
+  <meta name="description" content="Calculate driving or walking directions to Taraknath Temple in Tarakeswar using your live GPS location or manual address entry." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MyTarakeswar | Routes & Navigation" />
+  <meta property="og:description" content="Find the quickest route to Tarakeswar Temple with interactive map markers for railway station, bus stand, hospital, and police station." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/TAR1.jpg" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/route.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="js/protect.js"></script>
+
+  <!-- Shared Navbar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="brand" onclick="location.href='index.html'">
+        <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+        <span class="title">MyTarakeswar</span>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="route.html" class="active">Route</a>
+        <a href="history.html">History</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="about.html">About</a>
+        <div class="nav-actions">
+          <span id="userNameDisplay" style="color: #fff; margin-right:8px; font-weight:600;"></span>
+          <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Route Content -->
+  <main class="container">
+    <section class="intro center">
+      <h2>Find Your Route to Tarakeswar</h2>
+      <p>Use your live GPS location or type a starting place (e.g., Howrah, Sheoraphuli, Chinsurah) to get step-by-step directions to Baba Taraknath Temple.</p>
+    </section>
+
+    <!-- Controls -->
+    <div class="route-controls-wrapper">
+      <div class="controls">
+        <button id="locateBtn" class="btn-locate"><i class="fas fa-location-crosshairs"></i> Use My Location</button>
+        <div class="search-input-group">
+          <input type="text" id="startAddress" placeholder="Or type starting city/place (e.g. Howrah)" aria-label="Starting Location" />
+          <button id="searchRouteBtn"><i class="fas fa-route"></i> Find Route</button>
+        </div>
+        <button id="clearRouteBtn" class="btn-clear" style="display:none;"><i class="fas fa-xmark"></i> Clear Route</button>
+      </div>
+
+      <!-- Status & Error Alert Banner -->
+      <div id="routeStatus" class="route-status-msg" style="display:none;"></div>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+          <span>MyTarakeswar</span>
+        </div>
+        <p>Your comprehensive digital tourism and route guidance portal for Tarakeswar, West Bengal.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="route.html">Route</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Developer</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:bhartanmay@gmail.com" style="color:var(--accent); text-decoration:none;">bhartanmay@gmail.com</a></p>
+        <p><i class="fas fa-location-dot"></i> Tarakeswar, Hooghly, WB</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MyTarakeswar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+  <!-- Route JS -->
+  <script src="js/main.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
