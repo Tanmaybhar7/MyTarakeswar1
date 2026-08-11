@@ -3,42 +3,117 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Restaurants - Tarakeswar</title>
+  <title>MyTarakeswar | Restaurants & Dining</title>
+  <meta name="description" content="Explore top Veg and Non-Veg restaurants in Tarakeswar with prices, contact details, and locations." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MyTarakeswar | Restaurants & Dining" />
+  <meta property="og:description" content="Find authentic local food, pure veg bhojanalayas, and dining spots near Tarakeswar Temple." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/TAR1.jpg" />
+
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <script src="js/protect.js"></script>
+
   <header class="site-header">
     <div class="nav-container container">
       <div class="brand" onclick="location.href='index.html'">
-        <img src="images/TAR3.jpeg" alt="logo"/>
+        <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo"/>
         <div class="title">MyTarakeswar</div>
       </div>
-      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
-      <div id="navLinks" class="nav-links">
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      <nav id="navLinks" class="nav-links">
         <a href="index.html">Home</a>
         <a href="route.html">Route</a>
         <a href="history.html">History</a>
+        <a href="restaurants.html" class="active">Restaurants</a>
         <a href="hotels.html">Hotels</a>
         <a href="about.html">About</a>
-      </div>
+        <div class="nav-actions">
+          <span id="userNameDisplay" style="color: #fff; margin-right:8px; font-weight:600;"></span>
+          <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main class="container">
-    <section style="padding:28px 0;">
+    <section style="padding:24px 0;">
       <h2>Restaurants & Dining</h2>
-      <p class="intro">Explore Veg and Non-Veg restaurants in Tarakeswar.</p>
+      <p class="intro">Explore Veg and Non-Veg restaurants in Tarakeswar with menus, price ranges, and direct call or map access.</p>
 
-      <label for="filterType">Filter by:</label>
-      <select id="filterType">
-  <option value="All">All</option>
-  <option value="Veg">Veg</option>
-  <option value="Non-Veg">Non-Veg</option>
-  <option value="Both">Both</option>
-</select>
+      <!-- Directory Controls -->
+      <div class="filter-controls">
+        <div class="filter-group">
+          <label for="searchInput">Search:</label>
+          <input type="text" id="searchInput" placeholder="Search by restaurant name or location..." />
+        </div>
 
-<div id="restaurantsList" class="list"></div>
+        <div class="filter-group">
+          <label for="filterType">Food Type:</label>
+          <select id="filterType">
+            <option value="All">All Types</option>
+            <option value="Veg">Veg Only</option>
+            <option value="Non-Veg">Non-Veg</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
 
-<script src="js/restaurants.js"></script>
+        <div class="filter-group">
+          <label for="sortPrice">Price Sort:</label>
+          <select id="sortPrice">
+            <option value="default">Default</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Restaurant Cards List -->
+      <div id="restaurantsList" class="list" style="margin-top:20px;"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+          <span>MyTarakeswar</span>
+        </div>
+        <p>Your comprehensive digital tourism and route guidance portal for Tarakeswar, West Bengal.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="route.html">Route</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Developer</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:bhartanmay@gmail.com" style="color:var(--accent); text-decoration:none;">bhartanmay@gmail.com</a></p>
+        <p><i class="fas fa-location-dot"></i> Tarakeswar, Hooghly, WB</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MyTarakeswar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/restaurants.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>

@@ -1,0 +1,261 @@
+/* -----------------------------
+   Global & Font Settings
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background: linear-gradient(180deg, #fff8f0, #fff1e6);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* -----------------------------
+   Hero / Header Banner
+------------------------------ */
+.about-hero, .about-section {
+  padding: 50px 20px;
+  background: linear-gradient(rgba(139, 0, 0, 0.85), rgba(111, 0, 24, 0.85)), 
+              url('../images/TAR1.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.about-section h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #fffddf;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   Section Styling
+------------------------------ */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #8b0000;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   Privacy / Purpose Section
+------------------------------ */
+.privacy-section {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 950px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.privacy-section:hover {
+  transform: translateY(-4px);
+}
+
+.privacy-section h3 {
+  color: #8b0000;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.privacy-section ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.privacy-section li {
+  margin: 12px 0;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.privacy-section i {
+  color: #8b0000;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  width: 24px;
+}
+
+/* -----------------------------
+   Contact Form Section
+------------------------------ */
+.contact-section {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  padding: 36px 30px;
+  margin: 40px auto;
+  max-width: 750px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.contact-section h2 {
+  color: #8b0000;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.contact-section > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #8b0000;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #8b0000;
+  box-shadow: 0 0 8px rgba(139,0,0,0.15);
+}
+
+.contact-status-msg {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn-contact-submit {
+  background: #8b0000;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-contact-submit:hover {
+  background: #6f0018;
+}
+
+/* -----------------------------
+   Team Section
+------------------------------ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  padding: 20px 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.member:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(139, 0, 0, 0.15);
+}
+
+.member img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  border: 3px solid #8b0000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.member h3 {
+  color: #8b0000;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.member p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  margin: 0 6px;
+  color: #555;
+  font-size: 1.15rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #8b0000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.02); }
+  to { opacity: 1; transform: scale(1); }
+}

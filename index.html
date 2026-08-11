@@ -4,31 +4,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyTarakeswar - Home</title>
+  <title>MyTarakeswar | Explore Tarakeswar</title>
+  <meta name="description" content="Discover Tarakeswar temple routes, live navigation, rich history, authentic restaurants, and comfortable hotels." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="MyTarakeswar | Explore Tarakeswar" />
+  <meta property="og:description" content="Your complete guide to Tarakeswar temple routes, history, food, and stays." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/TAR1.jpg" />
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <script src="js/protect.js"></script>
+
   <header class="site-header">
     <div class="nav-container">
       <div class="brand" onclick="location.href='index.html'">
-        <img src="images/TAR3.jpeg" alt="logo" />
-        MyTarakeswar
+        <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+        <span class="title">MyTarakeswar</span>
       </div>
 
-      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
 
-      <div id="navLinks" class="nav-links">
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html" class="active">Home</a>
         <a href="route.html">Route</a>
         <a href="history.html">History</a>
         <a href="restaurants.html">Restaurants</a>
         <a href="hotels.html">Hotels</a>
         <a href="about.html">About</a>
         <div class="nav-actions">
-          <span id="userNameDisplay" style="color: #fff; margin-right:8px;"></span>
+          <span id="userNameDisplay" style="color: #fff; margin-right:8px; font-weight:600;"></span>
           <button id="logoutBtn" class="btn btn-logout">Logout</button>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -51,27 +64,64 @@
     </section>
 
     <section class="intro container">
-      <h2>Explore</h2>
+      <h2>Explore Tarakeswar</h2>
       <p>Use the menu to navigate routes, restaurants, hotels, and the history of Tarakeswar.</p>
 
       <div class="grid">
         <div class="card center" onclick="location.href='route.html'">
-          <h3>Route</h3><p>Find the best route using your current location or manual input.</p>
+          <h3>Route</h3>
+          <p>Find the best route using your current location or manual input.</p>
         </div>
         <div class="card center" onclick="location.href='history.html'">
-          <h3>History</h3><p>Read easy English chapters on temple history and nearby spots.</p>
+          <h3>History</h3>
+          <p>Read easy English chapters on temple history and nearby spots.</p>
         </div>
         <div class="card center" onclick="location.href='restaurants.html'">
-          <h3>Restaurants</h3><p>Veg & Non-Veg listings with prices and photos.</p>
+          <h3>Restaurants</h3>
+          <p>Veg & Non-Veg listings with prices and photos.</p>
         </div>
         <div class="card center" onclick="location.href='hotels.html'">
-          <h3>Hotels</h3><p>Room prices, phone numbers and images for quick booking.</p>
+          <h3>Hotels</h3>
+          <p>Room prices, phone numbers and images for quick booking.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <script src="js/protect.js"></script>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/TAR3.jpeg" alt="MyTarakeswar Logo" />
+          <span>MyTarakeswar</span>
+        </div>
+        <p>Your comprehensive digital tourism and route guidance portal for Tarakeswar, West Bengal.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="route.html">Route</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Developer</h4>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:bhartanmay@gmail.com" style="color:var(--accent); text-decoration:none;">bhartanmay@gmail.com</a></p>
+        <p><i class="fas fa-location-dot"></i> Tarakeswar, Hooghly, WB</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MyTarakeswar. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
   <script src="js/auth.js"></script>
 </body>
